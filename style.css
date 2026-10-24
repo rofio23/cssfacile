@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Isometra&family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body{
+    background-color: rgb(146, 201, 183);
+    height: 350vh;
+}
+
+.titre{
+    position: absolute;
+    background-color: rgb(57, 226, 209);
+    width: 500px;
+    height: 240px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    top: 40px;
+    border: 10px solid rgb(41, 177, 103);
+    border-radius: 5px;
+    font-family: "Rubik", sans-serif;
+    font-size: 30px;
+    color: rgb(81, 130, 149);
+}
+
+.cartes {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    justify-content: center;
+    gap: 130px 80px;
+    margin-top: 500px;
+}
+
+.background, .color, .textalign, .fontfamily,
+.fontsize, .height, .width, .borderradius {
+    position: static;
+    width: 500px;
+    height: 568px;
+    background-color: rgb(57, 226, 209);
+    border: 5px solid rgb(41, 177, 103);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Rubik", sans-serif;
+}
+
+.cartes img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+
+@media (max-width: 1100px) {
+    .cartes {
+        grid-template-columns: minmax(0, 500px);
+        padding: 0 20px;
+    }
+
+    .background, .color, .textalign, .fontfamily {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+.cartes img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+
+.background, .color, .textalign, .fontfamily,
+.fontsize, .height, .width, .borderradius {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+.cartes img {
+    width: 75%;
+    height: 280px;
+    object-fit: contain;
+}
+
+.cartes h2 {
+    font-size: 35px;
+    margin: 20px 0 10px;
+    color: rgb(81, 130, 149);
+    font-family: "Rubik", sans-serif;
+}
+
+.cartes p {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 20px;
+    margin: 0;
+    color: rgb(81, 130, 149);
+    font-family: "Rubik", sans-serif;
+}
+
+
